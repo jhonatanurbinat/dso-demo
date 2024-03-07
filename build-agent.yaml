@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  name: spring-build-ci-pod  # Adding a name for the Pod
   labels:
     app: spring-build-ci
 spec:
