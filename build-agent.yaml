@@ -39,6 +39,9 @@ spec:
       volumeMounts:
         - name: jenkins-docker-cfg
           mountPath: /kaniko/.docker
+      env:
+        - name: container
+          value: "kube"          
     - name: licensefinder
       image: licensefinder/license_finder
       command:
